@@ -1,0 +1,87 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic, Helvetica, Arial, sans-serif;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+h1 {
+    font-size: 72px;
+    margin: 0px;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+h4 {
+    font-size: 24px;
+}
+a {
+    color: white;
+}
+div.slide .bg {
+    opacity: 0.75;
+}
+div.slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.slide.one {
+    background-color: black;
+}
+div.slide.two {
+    background-image: url(/interestimages/brainpurple.jpg);
+}
+div.slide.three {
+    background-image: url(/interestimages/circuit.jpg);
+}
+div.slide.four {
+    background-image: url(/interestimages/bifurcation.jpg);
+}
+div.slide.five {
+    background-image: url(/interestimages/jelly.jpg);
+}
+div.slide.six {
+    background-image: url(/interestimages/yosemite.jpg);
+}
+div.slide.seven {
+    background-image: url(/interestimages/books.jpg);
+}
+div.content {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 5px black, 2px 2px 0px black;
+}
+div.content pre {
+    text-align: left;
+    opacity: 0.90;
+}
+div#indicator {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: block;
+    width: 5px;
+    z-index: 9999;
+    background: rgba(225, 75, 75, .85);
+}
+#nav {
+    list-style: none;
+    position: fixed;
+    right: 20px;
+}
+#nav li {
+    margin: 0 0 15px 0;
+}
+.foo {
+    width: 100%;
+    height: 100px;
+}
