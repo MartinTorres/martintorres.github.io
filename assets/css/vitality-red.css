@@ -633,6 +633,7 @@ aside.cta-quote span.quote {
 }
 .portfolio-carousel .item .project-details {
   padding: 0;
+    margin-bottom: 100px;
 }
 .portfolio-carousel .item .project-details img.client-logo {
   margin: 0 auto 25px;
