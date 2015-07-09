@@ -638,7 +638,7 @@ aside.cta-quote span.quote {
   margin: 0 auto 25px;
 }
 .portfolio-carousel .item .project-details .project-name {
-  display: block;
+  /*display: block;*/
   font-size: 40px;
   line-height: 40px;
   margin-bottom: 5px;
@@ -695,7 +695,8 @@ aside.cta-quote span.quote {
     padding: 15% 0 0;
   }
   .portfolio-carousel .item .project-details img.client-logo {
-    margin: 0 auto 25px 0;
+    /*margin: 0 auto 25px 0;*/
+      margin:0 0 0 0;
   }
   .portfolio-carousel .item .project-details .project-name {
     display: block;
@@ -1023,6 +1024,15 @@ footer.footer .copyright p.small {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
+}
+.btn-outline-light-edit {
+  color: white;
+  border: 1px solid white;
+  background: transparent;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  
 }
 .btn-outline-light:hover,
 .btn-outline-light:focus {
