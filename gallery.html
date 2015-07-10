@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery</title>
+
+    <script type="text/javascript" src="/highslide/highslide-with-gallery.js"></script>
+    <link rel="stylesheet" type="text/css" href="/highslide/highslide.css" />
+
+    <link href="gallerycss/galleryboot.css" rel="stylesheet" type="text/css" />
+
+    <link href="gallerycss/cover.css" rel="stylesheet" type="text/css" charset="utf-8" />
+
+    <script type="text/javascript" src="galleryjs/SpaceMaker.js"></script>
+    <link rel="stylesheet" type="text/css" href="gallerycss/animate.css" />
+
+    <script type="text/javascript">
+        hs.graphicsDir = '/highslide/graphics/';
+        hs.align = 'center';
+        hs.transitions = ['expand', 'crossfade'];
+        hs.outlineType = 'rounded-white';
+        hs.fadeInOut = true;
+         //hs.dimmingOpacity = 0.75;
+
+         // Add the controlbar
+        hs.addSlideshow({
+            //slideshowGroup: 'group1',
+            interval: 5000,
+            repeat: false,
+            useControls: false,
+            fixedControls: 'fit',
+            overlayOptions: {
+                opacity: 0.75,
+                position: 'bottom center',
+                hideOnMouseOut: true
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="headline">
+
+        <div class="site-wrapper">
+
+            <div class="site-wrapper-inner">
+
+                <div class="cover-container">
+
+                    <div class="masthead clearfix">
+                        <div class="inner">
+                            <h3 class="masthead-brand">Gallery</h3>
+                            <nav>
+                                <ul class="nav masthead-nav">
+                                    <li><a href="/index.html">Home</a>
+                                    </li>
+                                    <li><a href="/index.html#about">About</a>
+                                    </li>
+                                    <li><a href="/index.html#interests">Interests</a>
+                                    </li>
+                                    <li class="active"><a href="#">Gallery</a>
+                                    </li>
+                                    <li><a href="#">Blog</a>
+                                    </li>
+                                    <li><a href="/index.html#contacts">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div class="highslide-gallery">
+
+                <div id="items">
+                    
+                    <div id="item_3" class="item" style="width:220px; visibility:hidden;">
+                        <div class="p_content">
+                            <a href="galleryimages/woods3.jpg" class="highslide" onclick="return hs.expand(this)" target="_blank">
+                                <img src="galleryimages/woods3.jpg" border="0" width="220" height="170" align="left" class="padRight" style="float:left;padding-bottom:1em;">
+                            </a>
+
+                            <div class="highslide-caption">
+                                woods caption
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div id="item_2" class="item" style="width:440px; visibility:hidden;">
+                        <div class="p_content">
+                            <blockquote>Amidst the attention given to the sciences as how they can lead to the cure of all diseases and daily problems of mankind, I believe that the biggest breakthrough will be the realization that the arts, which are conventionally considered ‘useless,’ will be recognized as the whole reason why we ever try to live longer or live more prosperously.</blockquote>—John Maeda via <b><a href="http://spacecollective.org/rene/4708/The-universe-will-fly-like-a-bird" target="_blank">The universe will fly like a bird</a></b> 
+                        </div>
+                    </div>
+
+
+
+
+                    <div id="item_1" class="item" style="width:220px; visibility:hidden;">
+                        <div class="p_content">
+                            <a href="galleryimages/xaos.jpg" class="highslide" onclick="return hs.expand(this)" target="_blank">
+                                <img src="galleryimages/xaos.jpg" border="0" width="220" height="167" align="left" class="padRight" style="float:left;padding-bottom:1em;">
+                            </a>The amazing thing about the singularity, the Story of the singularity that is, is the way it affects us. When projecting it on the line of our event horizon, the singularity is a story that brings us into deconstruction and moves us into composing ourselves anew. —<a href="http://spacecollective.org/Xaos" target="_blank">Xaos</a> 
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    </div>
+
+
+    <input type="hidden" id="lastpid" value="1">
+    <script type="text/javascript">
+        firstshuffle();
+    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/dist/js/bootstrap.min.js"></script>
+    <script src="galleryjs/viewportchecker.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('.item').addClass("hidden").viewportChecker({
+                classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
+                offset: 100
+            });
+        });
+    </script>
+
+</body>
+
+</html>
