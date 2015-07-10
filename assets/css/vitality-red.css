@@ -635,6 +635,9 @@ aside.cta-quote span.quote {
   padding: 0;
     /*margin-bottom: 100px;*/
 }
+.portfolio-carousel .item .transparency-overlay {
+    pointer-events: none;
+}
 .portfolio-carousel .item .project-details img.client-logo {
   margin: 0 auto 25px;
 }

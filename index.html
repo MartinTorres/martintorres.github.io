@@ -46,6 +46,17 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    <!--[if IE]>
+      <style type="text/css">
+
+        .sample {
+          filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='sample_600x600.png', sizingMethod='scale');
+          background:none !important;
+        }
+
+        </style>
+    <![endif]-->
+    
 </head>
 <!-- Alternate Body Classes: .modern and .vintage -->
 
@@ -77,9 +88,6 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#interests">Interests</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="/gallery.html">Gallery</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#blog">Blog</a>
@@ -132,7 +140,7 @@
                             <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">Related Work <i class="fa fa-long-arrow-right fa-fw"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-8 col-md-pull-4 hidden-xs">
+                    <div class="col-md-8 col-md-pull-4 hidden-xs transparency-overlay">
                         <img src="assets/img/portfolio/placeholder.png" class="img-responsive portfolio-image" alt="">
                     </div>
                 </div>
@@ -151,7 +159,7 @@
                             <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light">Related Work <i class="fa fa-long-arrow-right fa-fw"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-8 col-md-pull-4 hidden-xs">
+                    <div class="col-md-8 col-md-pull-4 hidden-xs transparency-overlay">
                         <img src="assets/img/portfolio/placeholder.png" class="img-responsive portfolio-image" alt="">
                     </div>
                 </div>
@@ -170,64 +178,27 @@
                             <a href="#portfolioModal3" data-toggle="modal" class="btn btn-outline-light">Related Work <i class="fa fa-long-arrow-right fa-fw"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-8 col-md-pull-4 hidden-xs">
+                    <div class="col-md-8 col-md-pull-4 hidden-xs transparency-overlay">
                         <img src="assets/img/portfolio/placeholder.png" class="img-responsive portfolio-image" alt="">
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="item" style="background-image: url('assets/img/creative/portfolio/books.jpg')">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 col-md-push-4">
-                        <div class="project-details">
-                            <img src="assets/img/client-logos/placeholderlogo.png" class="" alt="">
-                            <span class="project-name">Books</span>
-                            <span class="project-description">Books I've read or want to read</span>
-                            <hr class="colored">
-                            <a href="#portfolioModal4" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-md-pull-4 hidden-xs">
-                        <img src="assets/img/portfolio/placeholder.png" class="img-responsive portfolio-image" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="item" style="background-image: url('assets/img/creative/portfolio/yosemite.jpg')">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 col-md-push-4">
-                        <div class="project-details">
-                            <img src="assets/img/client-logos/placeholderlogo.png" class="" alt="">
-                            <span class="project-name">Travel</span>
-                            <span class="project-description">Places I've been and places I want to see</span>
-                            <hr class="colored">
-                            <a href="#portfolioModal3" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-md-pull-4 hidden-xs">
-                        <img src="assets/img/portfolio/placeholder.png" class="img-responsive portfolio-image" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
         
         <div class="item" style="background-image: url('assets/img/creative/portfolio/jelly.jpg')">
             <div class="container-fluid">
-                <div class="row">   
+                <div class="row"> 
                     <div class="col-md-4 col-md-push-4">
                         <div class="project-details">
                             <img src="assets/img/client-logos/placeholderlogo.png" class="" alt="">
-                            <span class="project-name">Wildlife</span>
-                            <span class="project-description">Creatures are cool</span>
+                            <span class="project-name">Gallery</span>
+                            <span class="project-description">A collection of images from across the web</span>
                             <hr class="colored">
-                            <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                            <a href="gallery.html" class="btn btn-outline-light">View <i class="fa fa-long-arrow-right fa-fw"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-8 col-md-pull-4 hidden-xs">
+                    <div class="col-md-8 col-md-pull-4 hidden-xs transparency-overlay">
                         <img src="assets/img/portfolio/placeholder.png" class="img-responsive portfolio-image" alt="">
                     </div>
                 </div>
@@ -240,7 +211,7 @@
                 <div class="col-lg-12 text-center">
                     <h2>Contact Me</h2>
                     <hr class="colored">
-                    <p>I'd love to hear about your next project! Send me a message and I will see if I can help.</p>
+                    <p>I'd love to hear your questions or comments. I'll try my best to get back to you quickly and help in any way I can.</p>
                 </div>
             </div>
             <div class="row content-row">
